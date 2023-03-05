@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LandAI</title>
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-Dzm/0nD8LVV1CBmdHBuO7RswKN0Y9bfAFyg5k5D5f7GmqZ3q1ZGtKVAgEIXb+24tHrYDrQX/KUGlG34kdyxJxA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="container-xxl bg-white p-0">
+
+    <div class="container-xxl position-relative p-0">
+      <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <a href="" class="navbar-brand p-0">
+          <h1 class="m-0"><i class="fa fa-search me-2"></i>LandAI<span class="fs-5">creator</span></h1>
+          <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Service</a>
+
+
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+
+
+        </div>
+      </nav>
+
+     <div class="container-xxl py-1 bg-primary hero-header mb-5"> 
+        <div class="container my-5 py-5 px-lg-5"> 
+          <div class="row g-5 py-5">
+            <div class="col-lg-6 text-center text-lg-start">
+              <h1 class="text-white mb-4 animated zoomIn">AI website generator</h1>
+              <p class="text-white pb-3 animated zoomIn">try to generate your site with simple text prompts</p>
+
+              <a href="#inizio" class="btn btn-outline-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">Try</a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-start">
+              <img class="img-fluid" src="immagini/chiocciola.png" style="height: 300px;" alt="">
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <!-- newsite Start and form -->
+    <div class="container py-5">
+      <div id="app">
+        <div id="chat_container"></div>
+        <form>
+          <textarea name="prompt" rows="1" cols="1" placeholder="create a new element"></textarea>
+          <button type="submit" >create
+           
+          </button>
+        <!--  <button type="submit"><img src="assets/send.svg" alt="send" /> -->
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
