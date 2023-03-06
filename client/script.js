@@ -1,8 +1,8 @@
-import bot from './assets/bot.svg'
-import user from './assets/user.svg'
+//import bot from '/assets/bot.svg'
+//import user from './assets/user.svg'
 
-import { Orbit } from '@uiball/loaders'
-import { LeapFrog } from '@uiball/loaders'
+//import { Orbit } from '@uiball/loaders'
+//import { LeapFrog } from '@uiball/loaders'
 
 
 const form = document.querySelector('form')
@@ -86,7 +86,7 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    const response = await fetch('http://localhost:5000', {
+    const response = await fetch('/api', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -101,6 +101,7 @@ const handleSubmit = async (e) => {
 
     if (response.ok) {
         const data = await response.json();
+        
         
         const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
         console.log(data)
